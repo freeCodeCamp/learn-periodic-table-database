@@ -14,7 +14,7 @@
         "sudo -u postgres psql -c \"CREATE USER freecodecamp WITH CREATEDB;\""
       ],
       "commits": [
-        "aa6114e7ebe9cc2578a2fec33af4a6fdd84d99c7"
+        "c2c96bd269f9d57d833424436bb51c35fc4a5aea"
       ]
     },
     "testRunner": {
@@ -46,9 +46,13 @@
         {
           "id": "1.1",
           "content": "Complete the tasks below",
+          "subtasks": [
+            "You should create a database named `worldcup`",
+            "You should create a database named `worldcup`"
+          ],
           "setup": {
             "commits": [
-              "cb0196851defbe95a88e20ff66dd274ca879e575"
+              "beac41ab3fdda1cf25e2d997983381778e455bd9"
             ]
           }
         }
