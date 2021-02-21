@@ -4,7 +4,7 @@
 
 ## 1. Instructions
 
-I have started you off with a `periodic_table` database that has information about some chemical elements. You can connect to it by entering `psql —username=freecodecamp —dbname=periodic_table` in the terminal. It’s a good idea to get a little familiar with the existing tables, columns and rows. Read the instructions below and complete user stories to finish the project. Good luck!
+I have started you off with a `periodic_table` database that has information about some chemical elements. You can connect to it by entering `psql --username=freecodecamp --dbname=periodic_table` in the terminal. It’s a good idea to get a little familiar with the existing tables, columns and rows. Read the instructions below and complete user stories to finish the project. Good luck!
 
 Part 1: Fix the database
 
