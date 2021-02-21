@@ -7,6 +7,7 @@ config:
       - sudo cp ~/project/.freeCodeCamp/pg_hba.conf /etc/postgresql/12/main/pg_hba.conf
       - sudo service postgresql start
       - sudo -u postgres psql -c "CREATE USER freecodecamp WITH CREATEDB;"
+      - psql -U postgres < ./.freeCodeCamp/db.sql
   testRunner:
     command: npm run programmatic-test
     args:
