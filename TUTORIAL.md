@@ -49,11 +49,10 @@ Complete the tasks below
 - You should rename the `weight` column to `atomic_mass`
 - You should rename the `melting_point` column to `melting_point_celsius` and the `boiling_point` column to `boiling_point_celsius`
 - You should delete the non existing element, whose `atomic_number` is `1001` from the two tables. You will need to delete it in one table first.
-- You should insert the next two elements into the database into the existing tables. They are:
-```
+- |
+You should insert the next two elements into the database into the existing tables. They are:
 | atomic_number | Symbol | Name     | type     | atomic_mass | melting_point_celsius | boiling_point_celsius |
 | ------------- | ------ | -------- | -------- | ----------- | --------------------- | --------------------- |
 | 9             | F      | Fluorine | Nonmetal | 18.998      | -220                  | -188.1                |
 | 10            | Ne     | Neon     | Nonmetal | 20.18       | -248.6                | -246.1                |
-```
 - You should turn the `periodic_table` folder into a git repository with `git init`
