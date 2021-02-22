@@ -32,8 +32,7 @@ Complete the tasks below
 - Your `types` table should have a `type_id` column that is an integer and the primary key
 - Your `types` table should have a `type` column that can store the different types from the `type` column in the `elements` table
 - You should add three rows to your `types` table whose values are the three different types from the `properties` table
-- Your `properties` table should have a `type_id` foreign key column that references the `type_id` column from the `types` table
-- Your `type_id` foreign key should not allowed to be null
+- Your `properties` table should have a `type_id` foreign key column that references the `type_id` column from the `types` table. It should be an `INT` with the `NOT NULL` constraint
 - Your `properties` table should not have a `type` column
 - Each row in your `properties` table should have a `type_id` value that links to the correct type from the `types` table
 - You should capitalize the first letter of all the symbols in the `elements` table
@@ -45,7 +44,6 @@ Complete the tasks below
 | 10            | Ne     | Neon     | Nonmetal | 20.18       | -248.6                | -246.1                |
 - You should turn the `periodic_table` folder into a git repository with `git init`
 - Your repository should have a `main` branch with all your commits
-- Your working tree should be clean, you should not have any uncommitted changes in your repo
 - Your `period_table` repo should have at least five commits
 - You should create an `element.sh` file in your repo folder for the program I want you to make
 - Your script (`.sh`) file should have executable permissions
@@ -57,3 +55,4 @@ Complete the tasks below
 - You should rename the `melting_point` column to `melting_point_celsius` and the `boiling_point` column to `boiling_point_celsius`
 - Your `melting_point_celsius` and `boiling_point_celsius` should not accept null values
 - You should delete the non existent element, whose `atomic_number` is `1001`, from the two tables
+- Your working tree should be clean, you should not have any uncommitted changes in your repo
