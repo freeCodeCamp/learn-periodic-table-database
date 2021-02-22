@@ -8,7 +8,7 @@ I have started you off with a `periodic_table` database that has information abo
 
 Part 1: Fix the database
 
-I made some mistakes when creating the database, there are a few I need fixed or changed. See the user stories below for what to change.
+I made some mistakes when creating the database, there are a few things I need fixed or changed. See the user stories below for what to change.
 
 Part 2: Create your git repository
 
