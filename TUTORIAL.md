@@ -30,7 +30,7 @@ Complete the tasks below
 - You should set the `atomic_number` column from the `properties` table as a foreign key that references the column of the same name in the `elements` table
 - You should create a `types` table that will store the three types of elements
 - Your `types` table should have a `type_id` column that is an integer and the primary key
-- Your `types` table should have a `type` column that can store the different types from the `type` column in the `properties` table
+- Your `types` table should have a `type` column that's a `VARCHAR` and cannot be `null`. It will store the different types from the `type` column in the `properties` table
 - You should add three rows to your `types` table whose values are the three different types from the `properties` table
 - Your `properties` table should have a `type_id` foreign key column that references the `type_id` column from the `types` table. It should be an `INT` with the `NOT NULL` constraint
 - Your `properties` table should not have a `type` column
