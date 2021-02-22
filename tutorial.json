@@ -15,7 +15,7 @@
         "psql -U postgres < ./.freeCodeCamp/db.sql"
       ],
       "commits": [
-        "5731c7cbcc08978ecd05a71d57ef7b5d200799e8"
+        "925256da45f098b07cdf493dc6d32cb7e8bc10da"
       ]
     },
     "testRunner": {
@@ -79,7 +79,7 @@
           ],
           "setup": {
             "commits": [
-              "783f98810d64cb248bf9856470aa48cc00599b7e"
+              "d8da34e500c7ffc387bd3aac328facebae8484bd"
             ]
           }
         }
