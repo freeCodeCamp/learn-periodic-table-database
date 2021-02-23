@@ -16,7 +16,7 @@ I need you to make a small bash program for me. I want the code version controll
 
 Part 3: Create the script
 
-Lastly, I want to you to make a script that accepts an argument that can be an `atomic number`, `symbol`, or `name` of an element and outputs some information about the given element. Each element in the database has a melting point and boiling point in celsius. Part of the script will be to convert those temperatures into Fehrenheit and Kelvin. The conversion formula for Fahrenheit is `(celsius × 9/5) + 32`, and `celsius + 273.15` for Kelvin. The output from your script should be: `The element with atomic number <atomic_number> is <name> (<symbol>). It's a <type> with a mass of <atomic_mass> amu. <name> has a melting point of <melting_point_celsius> C, <melting_point_fahrenheit> F, or <melting_point_kelvin> K. It's boiling point is <boiling_point_celsius> C, <boiling_point_fahrenheit> F, or <boiling_point_kelvin> K.`
+Lastly, I want to you to make a script that accepts an argument that can be an `atomic number`, `symbol`, or `name` of an element and outputs some information about the given element.
 
 ### 1.1
 
@@ -38,17 +38,19 @@ Complete the tasks below
 - Each row in your `properties` table should have a `type_id` value that links to the correct type from the `types` table
 - You should capitalize the first letter of all the `symbol` values in the `elements` table. Be careful to only capitalize the letter and not change any others
 - You should remove all the trailing zeros after the decimals from each row of the `atomic_mass` column. You may need to adjust a data type to `DECIMAL` for this. Be careful not to change the value
-- You should insert the next two elements into the database into the existing tables. They are: 9, F, Fluorine, Nonmetal, 18.998, -220, -188.1, and 10, Ne, Neon, Nonmetal, 20.18, -248.6, -246.1
+- You should add the element with atomic number `9` to your database. It's name is `Fluorine`, symbol is `F`, mass is `18.998`, melting point is `-220`, boiling point is `-188.1`, and it's a `nonmetal`
+- You should add the element with atomic number `10` to your database. It's name is `Neon`, symbol is `Ne`, mass is `20.18`, melting point is `-248.6`, boiling point is `-246.1`, and it's a `nonmetal`
 - You should turn the `periodic_table` folder into a git repository with `git init`
 - Your repository should have a `main` branch with all your commits
 - Your `period_table` repo should have at least five commits
 - You should create an `element.sh` file in your repo folder for the program I want you to make
 - Your script (`.sh`) file should have executable permissions
-- If I run `./element.sh 1`, `./element.sh H`, or `./element.sh Hydrogen`, it should output `The element with atomic number 1 is Hydrogen (H). It's a Nonmetal with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 C, -434.38 F, or 14.05 K. It's boiling point is -252.9 C, -423.22 F, or 20.25 K.`
+- If I run `./element.sh` it should output `Please provide an element as an argument.`
+- If I run `./element.sh 1`, `./element.sh H`, or `./element.sh Hydrogen`, it should output `The element with atomic number 1 is Hydrogen (H). It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius.`
 - If I run your script with another element as input, I should get the same output but with information associated with the given element.
-- It the argument input to your script doesn't exist as an `atomic_number`, `symbol`, or `name` in the database, the output should be `I could not find any information in the database about that element.`
+- It the argument input to your script doesn't exist as an `atomic_number`, `symbol`, or `name` in the database, the output should be `I could not find that element in the database.`
 - The message for the first commit in your repo should be `Initital commit`
 - The rest of the commit messages should start with `fix:`, `feat:`, `refactor:`, `chore:`, or `test:`
-- You should delete the non existent element, whose `atomic_number` is `1001`, from the two tables
+- You should delete the non existent element, whose `atomic_number` is `1000`, from the two tables
 - Your `properties` table should not have a `type` column
-- You should finish your project while on the `main` branch. Your working tree should be clean, you should not have any uncommitted changes in your repo
+- You should finish your project while on the `main` branch. Your working tree should be clean and you should not have any uncommitted changes
