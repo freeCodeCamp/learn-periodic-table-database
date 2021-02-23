@@ -33,7 +33,6 @@ Complete the tasks below
 - Your `types` table should have a `type` column that's a `VARCHAR` and cannot be `null`. It will store the different types from the `type` column in the `properties` table
 - You should add three rows to your `types` table whose values are the three different types from the `properties` table
 - Your `properties` table should have a `type_id` foreign key column that references the `type_id` column from the `types` table. It should be an `INT` with the `NOT NULL` constraint
-- Your `properties` table should not have a `type` column
 - Each row in your `properties` table should have a `type_id` value that links to the correct type from the `types` table
 - You should capitalize the first letter of all the `symbol` values in the `elements` table
 - You should remove all the irrelevant trailing zeros after the decimals from each value in the `properties` table. You may need to adjust a data type to `DECIMAL` for this
@@ -51,4 +50,5 @@ Complete the tasks below
 - You should rename the `melting_point` column to `melting_point_celsius` and the `boiling_point` column to `boiling_point_celsius`
 - Your `melting_point_celsius` and `boiling_point_celsius` should not accept null values
 - You should delete the non existent element, whose `atomic_number` is `1001`, from the two tables
+- Your `properties` table should not have a `type` column
 - You should finish your project while on the `main` branch. Your working tree should be clean, you should not have any uncommitted changes in your repo
