@@ -4,7 +4,7 @@
 
 ## 1. Instructions
 
-I have started you off with a `periodic_table` database that has information about some chemical elements. You can connect to it by entering `psql --username=freecodecamp --dbname=periodic_table` in the terminal. It’s a good idea to get a little familiar with the existing tables, columns, and rows. Read the instructions below and complete user stories to finish the project. Good luck!
+I have started you off with a `periodic_table` database that has information about some chemical elements. You can connect to it by entering `psql --username=freecodecamp --dbname=periodic_table` in the terminal. It’s a good idea to get a little familiar with the existing tables, columns, and rows. Read the instructions below and complete user stories to finish the project. Certain tests may not pass until other user stories are complete. Good luck!
 
 Part 1: Fix the database
 
@@ -25,6 +25,8 @@ Complete the tasks below
 #### SUBTASKS
 
 - You should rename the `weight` column to `atomic_mass`
+- You should rename the `melting_point` column to `melting_point_celsius` and the `boiling_point` column to `boiling_point_celsius`
+- Your `melting_point_celsius` and `boiling_point_celsius` columns should not accept null values
 - You should add the `UNIQUE` constraint to the `symbol` and `name` columns from the `elements` table
 - Your `symbol` and `name` columns should have the `NOT NULL` constraint
 - You should set the `atomic_number` column from the `properties` table as a foreign key that references the column of the same name in the `elements` table
@@ -34,8 +36,8 @@ Complete the tasks below
 - You should add three rows to your `types` table whose values are the three different types from the `properties` table
 - Your `properties` table should have a `type_id` foreign key column that references the `type_id` column from the `types` table. It should be an `INT` with the `NOT NULL` constraint
 - Each row in your `properties` table should have a `type_id` value that links to the correct type from the `types` table
-- You should capitalize the first letter of all the `symbol` values in the `elements` table
-- You should remove all the irrelevant trailing zeros after the decimals from each value in the `properties` table. You may need to adjust a data type to `DECIMAL` for this
+- You should capitalize the first letter of all the `symbol` values in the `elements` table. Be careful to only capitalize the letter and not change any others
+- You should remove all the trailing zeros after the decimals from each row of the `atomic_mass` column. You may need to adjust a data type to `DECIMAL` for this. Be careful not to change the value
 - You should insert the next two elements into the database into the existing tables. They are: 9, F, Fluorine, Nonmetal, 18.998, -220, -188.1, and 10, Ne, Neon, Nonmetal, 20.18, -248.6, -246.1
 - You should turn the `periodic_table` folder into a git repository with `git init`
 - Your repository should have a `main` branch with all your commits
@@ -47,8 +49,6 @@ Complete the tasks below
 - It the argument input to your script doesn't exist as an `atomic_number`, `symbol`, or `name` in the database, the output should be `I could not find any information in the database about that element.`
 - The message for the first commit in your repo should be `Initital commit`
 - The rest of the commit messages should start with `fix:`, `feat:`, `refactor:`, `chore:`, or `test:`
-- You should rename the `melting_point` column to `melting_point_celsius` and the `boiling_point` column to `boiling_point_celsius`
-- Your `melting_point_celsius` and `boiling_point_celsius` should not accept null values
 - You should delete the non existent element, whose `atomic_number` is `1001`, from the two tables
 - Your `properties` table should not have a `type` column
 - You should finish your project while on the `main` branch. Your working tree should be clean, you should not have any uncommitted changes in your repo
