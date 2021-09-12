@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": {
     "title": "Periodic Table Database",
     "description": "> Welcome to the Periodic Table Database project!"
@@ -16,7 +16,7 @@
         "psql -U postgres < ./.freeCodeCamp/db.sql"
       ],
       "commits": [
-        "fcd05ca9a9c39e6df540f87513fdd2efa3e28f32"
+        "fc3e2609b7d0ba8b218cbd4fd659d5ff0b03d851"
       ]
     },
     "testRunner": {
@@ -28,8 +28,8 @@
       "directory": ".freeCodeCamp"
     },
     "repo": {
-      "uri": "https://github.com/freeCodeCamp/periodic-table-database",
-      "branch": "v1.0.0"
+      "uri": "https://github.com/learn-freeCodeCamp/periodic-table-database",
+      "branch": "v1.0.1"
     },
     "dependencies": [
       {
@@ -82,7 +82,7 @@
           ],
           "setup": {
             "commits": [
-              "ad2b99ad8bcccbc22af356c4859a3b66228eab44"
+              "416f61ec8965a84fbb28885a30a81642986042d1"
             ]
           }
         }
