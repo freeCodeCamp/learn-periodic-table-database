@@ -14,3 +14,8 @@ Whenever something on the version branch gets changed, add the new branch name a
 
 - Remove auto-save from VSCode settings
 - Change Project name in VSCode settings
+
+## [v1.0.2]
+
+- Move startup commands to `setup.sh`
+- Run `setup.sh` on continue and reset
