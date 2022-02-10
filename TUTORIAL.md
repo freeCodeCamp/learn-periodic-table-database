@@ -49,7 +49,7 @@ Complete the tasks below
 - If I run `./element.sh 1`, `./element.sh H`, or `./element.sh Hydrogen`, it should output `The element with atomic number 1 is Hydrogen (H). It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius.`
 - If I run your `element.sh` script with another element as input, I should get the same output but with information associated with the given element.
 - It the argument input to your `element.sh` script doesn't exist as an `atomic_number`, `symbol`, or `name` in the database, the output should be `I could not find that element in the database.`
-- The message for the first commit in your repo should be `Initital commit`
+- The message for the first commit in your repo should be `Initial commit`
 - The rest of the commit messages should start with `fix:`, `feat:`, `refactor:`, `chore:`, or `test:`
 - You should delete the non existent element, whose `atomic_number` is `1000`, from the two tables
 - Your `properties` table should not have a `type` column
