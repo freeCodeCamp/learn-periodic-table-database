@@ -42,7 +42,7 @@ Complete the tasks below
 - You should add the element with atomic number `10` to your database. It's name is `Neon`, symbol is `Ne`, mass is `20.18`, melting point is `-248.6`, boiling point is `-246.1`, and it's a `nonmetal`
 - You should turn the `periodic_table` folder into a git repository with `git init`
 - Your repository should have a `main` branch with all your commits
-- Your `period_table` repo should have at least five commits
+- Your `periodic_table` repo should have at least five commits
 - You should create an `element.sh` file in your repo folder for the program I want you to make
 - Your script (`.sh`) file should have executable permissions
 - If I run your `element.sh` file, it should output `Please provide an element as an argument.`
