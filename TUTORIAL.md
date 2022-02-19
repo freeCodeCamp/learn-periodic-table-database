@@ -42,14 +42,14 @@ Complete the tasks below
 - You should add the element with atomic number `10` to your database. It's name is `Neon`, symbol is `Ne`, mass is `20.18`, melting point is `-248.6`, boiling point is `-246.1`, and it's a `nonmetal`
 - You should turn the `periodic_table` folder into a git repository with `git init`
 - Your repository should have a `main` branch with all your commits
-- Your `period_table` repo should have at least five commits
+- Your `periodic_table` repo should have at least five commits
 - You should create an `element.sh` file in your repo folder for the program I want you to make
 - Your script (`.sh`) file should have executable permissions
 - If I run your `element.sh` file, it should output `Please provide an element as an argument.`
 - If I run `./element.sh 1`, `./element.sh H`, or `./element.sh Hydrogen`, it should output `The element with atomic number 1 is Hydrogen (H). It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius.`
 - If I run your `element.sh` script with another element as input, I should get the same output but with information associated with the given element.
 - It the argument input to your `element.sh` script doesn't exist as an `atomic_number`, `symbol`, or `name` in the database, the output should be `I could not find that element in the database.`
-- The message for the first commit in your repo should be `Initital commit`
+- The message for the first commit in your repo should be `Initial commit`
 - The rest of the commit messages should start with `fix:`, `feat:`, `refactor:`, `chore:`, or `test:`
 - You should delete the non existent element, whose `atomic_number` is `1000`, from the two tables
 - Your `properties` table should not have a `type` column
