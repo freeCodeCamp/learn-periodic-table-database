@@ -44,7 +44,7 @@
       }
     ],
     "webhook": {
-      "url": "https://api.freecodecamp.dev/coderoad-challenge-completed",
+      "url": "https://api.freecodecamp.org/coderoad-challenge-completed",
       "events": {
         "init": false,
         "reset": false,
@@ -58,8 +58,8 @@
     {
       "id": "1",
       "title": "Instructions",
-      "summary": "I have started you off with a `periodic_table` database that has information ...",
-      "content": "I have started you off with a `periodic_table` database that has information about some chemical elements. You can connect to it by entering `psql --username=freecodecamp --dbname=periodic_table` in the terminal. It’s a good idea to get a little familiar with the existing tables, columns, and rows. Read the instructions below and complete user stories to finish the project. Certain tests may not pass until other user stories are complete. Good luck!\n\nPart 1: Fix the database\n\nI made some mistakes when creating the database, there are a few things I need fixed or changed. See the user stories below for what to change.\n\nPart 2: Create your git repository\n\nI need you to make a small bash program for me. I want the code version controlled with `git`, so you will need to turn the suggested folder into a git repository.\n\nPart 3: Create the script\n\nLastly, I want to you to make a script that accepts an argument that can be an `atomic number`, `symbol`, or `name` of an element and outputs some information about the given element.",
+      "summary": "You are started with a `periodic_table` database that has information about s...",
+      "content": "You are started with a `periodic_table` database that has information about some chemical elements. You can connect to it by entering `psql --username=freecodecamp --dbname=periodic_table` in the terminal. You may want to get a little familiar with the existing tables, columns, and rows. Read the instructions below and complete user stories to finish the project. Certain tests may not pass until other user stories are complete. Good luck!\n\nPart 1: Fix the database\n\nThere are some mistakes in the database that need to be fixed or changed. See the user stories below for what to change.\n\nPart 2: Create your git repository\n\nYou need to make a small bash program. The code needs to be version controlled with `git`, so you will need to turn the suggested folder into a git repository.\n\nPart 3: Create the script\n\nLastly, you need to make a script that accepts an argument in the form of an `atomic number`, `symbol`, or `name` of an element and outputs some information about the given element.\n\n**Notes:**\nIf you leave your virtual machine, your database may not be saved. You can make a dump of it by entering `pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql` in a bash terminal (not the psql one). It will save the commands to rebuild your database in `periodic_table.sql`. The file will be located where the command was entered. If it's anything inside the `project` folder, the file will be saved in the VM. You can rebuild the database by entering `psql -U postgres < periodic_table.sql` in a terminal where the `.sql` file is.\n\nIf you are saving your progress on freeCodeCamp.org, after getting all the tests to pass, follow the instructions above to save a dump of your database. Save the `periodic_table.sql` file, as well as the final version of your `element.sh` file, in a public repository and submit the URL to it on freeCodeCamp.org.",
       "steps": [
         {
           "id": "1.1",
@@ -81,15 +81,15 @@
             "You should remove all the trailing zeros after the decimals from each row of the `atomic_mass` column. You may need to adjust a data type to `DECIMAL` for this. Be careful not to change the value",
             "You should add the element with atomic number `9` to your database. It's name is `Fluorine`, symbol is `F`, mass is `18.998`, melting point is `-220`, boiling point is `-188.1`, and it's a `nonmetal`",
             "You should add the element with atomic number `10` to your database. It's name is `Neon`, symbol is `Ne`, mass is `20.18`, melting point is `-248.6`, boiling point is `-246.1`, and it's a `nonmetal`",
-            "You should turn the `periodic_table` folder into a git repository with `git init`",
+            "You should create a `periodic_table` folder in the `project` folder and turn it into a git repository with `git init`",
             "Your repository should have a `main` branch with all your commits",
             "Your `periodic_table` repo should have at least five commits",
             "You should create an `element.sh` file in your repo folder for the program I want you to make",
             "Your script (`.sh`) file should have executable permissions",
-            "If I run your `element.sh` file, it should output `Please provide an element as an argument.`",
-            "If I run `./element.sh 1`, `./element.sh H`, or `./element.sh Hydrogen`, it should output `The element with atomic number 1 is Hydrogen (H). It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius.`",
-            "If I run your `element.sh` script with another element as input, I should get the same output but with information associated with the given element.",
-            "It the argument input to your `element.sh` script doesn't exist as an `atomic_number`, `symbol`, or `name` in the database, the output should be `I could not find that element in the database.`",
+            "If you run `./element.sh`, it should output `Please provide an element as an argument.`",
+            "If you run `./element.sh 1`, `./element.sh H`, or `./element.sh Hydrogen`, it should output `The element with atomic number 1 is Hydrogen (H). It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius.`",
+            "If you run `./element.sh` script with another element as input, you should get the same output but with information associated with the given element.",
+            "If the argument input to your `element.sh` script doesn't exist as an `atomic_number`, `symbol`, or `name` in the database, the output should be `I could not find that element in the database.`",
             "The message for the first commit in your repo should be `Initial commit`",
             "The rest of the commit messages should start with `fix:`, `feat:`, `refactor:`, `chore:`, or `test:`",
             "You should delete the non existent element, whose `atomic_number` is `1000`, from the two tables",
