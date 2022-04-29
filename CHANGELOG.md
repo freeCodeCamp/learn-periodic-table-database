@@ -19,3 +19,8 @@ Whenever something on the version branch gets changed, add the new branch name a
 
 - Move startup commands to `setup.sh`
 - Run `setup.sh` on continue and reset
+
+## [v1.0.3]
+
+- Add `exit` flag to mocha
+- [Don't use strict equal on tests with numbers](https://github.com/freeCodeCamp/freeCodeCamp/issues/45687)
