@@ -24,3 +24,8 @@ Whenever something on the version branch gets changed, add the new branch name a
 
 - Add `exit` flag to mocha
 - [Don't use strict equal on tests with numbers](https://github.com/freeCodeCamp/freeCodeCamp/issues/45687)
+
+## [v1.0.4]
+
+- Add `atomic_mass.txt` file to boilerplate files so campers can know what the values are if they mess up, and changed test text to mention that
+- Clarify in the test text that the script should provide only the suggested output and nothing else
