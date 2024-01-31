@@ -29,3 +29,7 @@ Whenever something on the version branch gets changed, add the new branch name a
 
 - Add `atomic_mass.txt` file to boilerplate files so campers can know what the values are if they mess up, and changed test text to mention that
 - Clarify in the test text that the script should provide only the suggested output and nothing else
+
+## [v2.0.0]
+
+- Add Gitpod config
