@@ -1,6 +1,6 @@
 {
   "id": "freeCodeCamp/learn-periodic-table-database:v1.0.0",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "summary": {
     "title": "Periodic Table Database",
     "description": "> Welcome to the Periodic Table Database project!"
@@ -12,7 +12,7 @@
         "cd .freeCodeCamp && npm install"
       ],
       "commits": [
-        "4ed60e5f5ffbf2914cb940fdbf2680c809f8747b"
+        "e6c61939e95d91b68120a051cb89ce09cef5f2a2"
       ]
     },
     "testRunner": {
@@ -25,7 +25,7 @@
     },
     "repo": {
       "uri": "https://github.com/freeCodeCamp/learn-periodic-table-database",
-      "branch": "v1.0.4"
+      "branch": "v2.0.0"
     },
     "continue": {
       "commands": [
@@ -98,7 +98,7 @@
           ],
           "setup": {
             "commits": [
-              "193075f7691d4fe0e1ca51190fdcfa0ff07c6a34"
+              "814631f1a040b9bda43456e6f6e23677a043e55e"
             ]
           }
         }
